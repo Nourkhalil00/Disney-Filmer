@@ -1,0 +1,154 @@
+@media only screen and (min-width: 1025px) {
+
+/* Bakgrunn bilde for alle filmene */
+.Disney_Filmer_Background {
+    background-image: url(Bilder/Disney_bakgrunn.jpeg);
+    background-size: cover;
+}
+
+.Pocahontas_Background {
+    background-image: url(Bilder/Pocahontas_Background.jpg);
+    background-size: cover;
+}
+
+.Mulan_Background {
+    background-image: url(Bilder/mulan_background.jpg);
+    background-size: cover;
+}
+
+.Dumbo_Background {
+    background-image: url(Bilder/disneydumbo.jpg);
+    background-size: cover;
+}
+
+.Bambi_Background {
+    background-image: url(Bilder/bambi_background.jpg);
+    background-size: cover;
+}
+
+.Tornerose_Background {
+    background-image: url(Bilder/tornerose_bakground\ \(1\).jpg);
+    background-size: cover;
+}
+
+/*Legger til bilde av disney logo */
+#Disney_image {
+    background-image: url(Bilder/Disneylogo2.jpg);
+    width: 200px;
+}
+/* stilen på h2 teksten*/
+h2 {
+    font-style: oblique;
+}
+/* stilen på h1 teksten */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+/* hover for å få fargen på h1*/
+h1:hover {
+    color: deeppink;
+}
+
+.Filmer {
+    display: flex; /* bruker flexbox for layout */
+    flex-direction: column; /* den rrangerer elementer vertikalt*/
+    align-items: center; /* den legger til avstand under raden */
+
+}
+
+.Filmer-row {
+    display: flex;/* bruker flexbox for layout */
+    justify-content: center;/* Sentrerer elementer horisontalt */
+    margin-bottom: 20px; /* for å legge til avstand under raden */
+}
+
+.Filmer-row a {
+    margin: 0 10px; /* den er for å legge til horizontal avstand mellom lenker */
+}
+
+.Filmer img {
+    transition: transform 0.3s ease; /* for å animere tranisjonen jevnt */
+}
+
+.Filmer img:hover {
+    transform: scale(1.59); /* forstører bildene på første side litt */
+}
+
+.gallery {
+    display: flex;/* bruker flexbox for layout */
+    justify-content: center;  /* Sentrerer elementer horisontalt */
+    margin-top: 20px; /* Legger til toppmarg */
+}
+
+.gallery a {
+    margin: 10px; /* Legger til avstand rundt lenkene */
+}
+
+.gallery img {
+    width: 300px; /* Setter bredden på bildene */
+}
+
+.Tilbakeknapp {
+    font-size: 16px; /* Setter skriftstørrelsen */
+    transition: font-size 0.3s ease;/* Animerer endring av skriftstørrelse jevnt */
+}
+
+.Tilbakeknapp:hover {
+    font-size: 20px;/* Øker skriftstørrelsen ved hover */
+}
+
+.TilbakeknappH {
+    position: relative; /* Angir relativ posisjonering */
+    background-color: rgba(0, 0, 0, 0.5); /* Setter semitransparent bakgrunnsfarge på tilbakeknappen */
+    color: white; /* Setter tekstfargen til hvit */
+    padding: 20px;/* legger til innvendig avstand rundt innholdet */
+    width: 130px; /* Setter bredden på elementet */
+    margin-left: 30px; /* flytter den litt til venstre*/
+}
+
+.FilmP {
+    position: relative;/* Angir relativ posisjonering */
+    background-color: rgba(0, 0, 0, 0.5); /* Setter semitransparent bakgrunnsfarge */
+    color: white; /* Setter tekstfargen til hvit */
+    padding: 30px;/* legger til innvendig avstand rundt innholdet */
+    width: 1300px;/* Setter bredden på elementet */
+}
+
+/* Keyframe animation for color change */
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(20deg);/* Starter farge animasjonen med en 20-graders hue-rotasjon */
+    }
+    100% {
+        filter: hue-rotate(360deg); /* Fullfører animasjonen med en 360-graders hue-rotasjon */
+    }
+}
+
+.Photo_Studio {
+    animation: colorChange 5s linear infinite;/* Anvender fargeendringsanimasjonen
+     over 5 sekunder i en kontinuerlig loop */
+}
+
+#Pocahontash1 {
+    animation: colorChange 5s linear infinite;/* Anvender fargeendringsanimasjonen over 5 sekunder
+     i en kontinuerlig loop */
+}
+
+#Dumboh1 {
+    animation: colorChange 5s linear infinite;/* Anvender fargeendringsanimasjonen over 5 sekunder 
+    i en kontinuerlig loop */
+}
+
+.FilmP {
+    /* animerer transformasjon og skriftstørrelse jevnt */
+    transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;  
+    transform-origin: center; /* Setter transformasjonens opprinnelsespunkt til midten */
+    margin-left: 30px; /*flytter teksten litt mot høyre*/
+}
+
+.FilmP:hover {
+    transform: scale(1.1);/*hover effekt på teksten*/
+}
+}

@@ -1,0 +1,66 @@
+<DOCTYPE html> <!--Start på html fil-->
+    <html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bestemmer tittelen på nettsiden som vises i fanesamlingen på toppen av weblauncheren-->
+        <title>Bambi</title>
+
+        <!--Linker css fila med denne html fila så vi kan endre på usene og egenskaper ved hjelp av css kode-->
+        <link rel="stylesheet" href="Disney.css">
+    
+    </head>
+
+    <!-- Vi gir body en class for å kunne endre bakgrunnsbilde i css fila-->
+    <body class="Bambi_background">
+    
+        <!--Vi gir h1 class FimlP og id Pocahontash1 for å kunne redigere utsene på header -->
+        <h1 class="FilmP" id="Pocahontash1">Bambi</h1>
+        <h2>Walt Disney Studios</h2>
+            
+            <!-- href linker <a>(anchor) til html siden DisneyFilmer.html. Anchoret inneholder et bilde. 
+                 Dette bildet blir da en link vi kan trykke på for å sende oss tilbake til den første siden-->
+            <a href="DisneyFilmer.html">
+            
+            <!--Her legger vi inn bildet i html denne gangen og skaper css class for legge til en rulerende fargeanimasjon-->
+            <img src="Bilder/Disneylogo2.jpg" class="Photo_Studio" 
+                  alt="The_Walt_Disney_Company_Logo" width="200">
+          
+            </a><br>
+
+            <h3>Om Filmen</h3>
+                <!--vi lager en paragraf for å snakke om filmen. Class "FilmP" for å kommunisere med css. FimlP i css bestemmer bakgrunn,
+                farge på teksten osv (kommenterer mer om dette i css dokumentet)-->
+                <p class="FilmP">
+                    Disney-filmen Bambi handler om en ung hjortekalv som vokser opp i skogen sammen med vennene sine. Han opplever både 
+                    glede og utfordringer mens han lærer om livet i naturen. Bambi møter vennskap, kjærlighet og tap, spesielt etter at
+                     han mister moren sin. Filmen er kjent for sin vakre animasjon og skildrer naturens syklus på en rørende måte. 
+                     Gjennom Bambis reise lærer vi om styrke, mot og viktigheten av å stå sammen med dem man er glad i.
+                </p>
+            
+            <!--redigerer tekst utsene med css class-->
+            <h2 class="h2">The Walt Disney Company</h2>
+            
+            <!--bruker class "FilmP" igjen for å endre på tekst farge osv i css (går mer i dybden i css fila)-->
+                <p class="FilmP">Walt Disney Animation Studios, etablert i 1923,
+                 er et pionérstudio innen animasjon og har skapt noen av de mest kjente tegnefilmer i historien. 
+                 Studioet har vært banebrytende innen håndtegnet animasjon og senere datagenererte bilder (CGI), 
+                 med filmer som har formet barndommen til generasjoner av mennesker.
+                  Med en arv som strekker seg over nesten et århundre, 
+                  har studioet produsert en rekke prisbelønte filmer og vært kjent for sin kunstneriske innovasjon, 
+                  rike historier og minneverdige karakterer. 
+                  Det er en hjørnestein i underholdningsbransjen og en drivkraft bak utviklingen av moderne animasjon.</p>
+    
+        <!--Her lager vi igjen en link tilbake til nettsiden i form av klikkbar tekst. Denne har også en hover funksjon som gjør
+            teksten større om man holder musen over teksten. Vi gir også både ancor en class og header 3 en class for å manipulere
+            i css.-->
+        <a href="DisneyFilmer.html" 
+            class="Tilbakeknapp">
+            <h3 class="TilbakeknappH">Tibake til side 1</h3>
+        </a>
+        <h4>Kilder:</h4>
+        <p>Wikipedia.org</p>
+    </body>
+    <!--avsluttningstag på html fila-->
+    </html>
